@@ -136,7 +136,7 @@ h2, h3, h4 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .content-wrapper {
@@ -147,23 +147,26 @@ p {
 /* Header styles */
 
 header {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
+  height: 100vh;
 }
 
 header nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 header nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 
@@ -171,11 +174,14 @@ header nav ul li {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 8px;
 }
 
 header nav ul li a {
   color: var(--orange);
+}
+
+.header-divider {
+  height: 80px;
 }
 
 /* Greeting */
@@ -190,7 +196,8 @@ header nav ul li a {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 
@@ -200,7 +207,6 @@ header nav ul li a {
 
 .greeting h2 {
   font-weight: 400;
-  /* max-width: 800px; */
 }
 
 
@@ -320,7 +326,7 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
 
 #portfolio #portfolio-wrapper {
@@ -498,9 +504,57 @@ footer .social-icons p i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles here */
+  header nav ul li {
+    font-size: 2em;
+  }
+
+  #about figure {
+    border: 1em solid;
+    padding: 10px;
+    width: 60%;
+  }
+
+  #portfolio .card {
+    background-color: var(--pink);
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid var(--ltBlue);
+    width: 41%;
+  }
 }
+
+@media only screen and (min-width: 1000px) {
+  
+  
+  .greeting h1 {
+    font-size: 4em;
+  }
+
+  /* #about .content-wrapper {
+    width: 70%;
+  } */
+
+  #about h1 {
+    width: 100%;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  #about .content-wrapper {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
