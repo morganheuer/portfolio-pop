@@ -90,15 +90,23 @@ textarea {
    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
    @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway&display=swap');
 
+:root {
+  --pink: #ffd0cb;
+  --orange: #ff7b00;
+  --yellow: #fff870;
+  --ltBlue: #caf0f8;
+  --dkBlue: #406ddb;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  background-color: #fff75e;
+  background-color: var(--yellow);
 }
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: #ff7b00;
+  color: var(--orange);
   font-size: 1em;
   margin: 0;
   padding: 0;
@@ -167,7 +175,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #ff7b00;
+  color: var(--orange);
 }
 
 /* Greeting */
@@ -187,7 +195,7 @@ header nav ul li a {
 
 
 .greeting i, .greeting span {
-  color: #ff7b00;
+  color: var(--orange);
 }
 
 .greeting h2 {
@@ -202,7 +210,7 @@ header nav ul li a {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #ffd0cb;
+  background-color: var(--pink);
 }
 
 #about .content-wrapper {
@@ -264,8 +272,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #caf0f8;
-  color: #406ddb;
+  background-color: var(--ltBlue);
+  color: var(--dkBlue);
 }
 
 aside .content-wrapper {
@@ -277,8 +285,8 @@ aside .content-wrapper {
 }
 
 aside h2 {
-  background-color: #ffd0cb;
-  border: 10px solid #ff7b00;
+  background-color: var(--pink);
+  border: 10px solid var(--orange);
   text-align: center;
   letter-spacing: 5px;
 }
@@ -289,14 +297,14 @@ aside p {
 
 aside input {
   width: 100%;
-  background-color: #fff75e;
-  color: #ff7b00;
+  background-color: var(--yellow);
+  color: var(--orange);
   font-size: 1.5em;
   padding: 20px 0;
   margin-top: 20px;
   letter-spacing: .2rem;
   text-align: center;
-  border: 7px dashed #ffd0cb;
+  border: 7px dashed var(--pink);
 }
 
 /* Portfolio */
@@ -324,10 +332,10 @@ aside input {
 }
 
 #portfolio .card {
-  background-color: #ffd0cb;
+  background-color: var(--pink);
   padding: 10px;
   margin: 10px 0;
-  border: 5px solid #b3d4fc;
+  border: 5px solid var(--ltBlue);
 }
 
 #portfolio h4 {
@@ -353,7 +361,7 @@ footer {
   flex-direction: column;
   text-align: center;
   padding-bottom: 50px;
-  background-color: #ffd0cb;
+  background-color: var(--pink);
 }
 
 footer .content-wrapper {
@@ -379,7 +387,7 @@ footer .content-wrapper {
 
 .connect p {
   margin: 0;
-  color: #406ddb;
+  color: var(--dkBlue);
 }
 
 footer .social-icons {
@@ -396,7 +404,7 @@ footer .social-icons p {
 }
 
 footer .social-icons p i {
-  color: #406ddb;
+  color: var(--dkBlue);
 }
 
 
