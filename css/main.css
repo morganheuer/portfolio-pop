@@ -217,6 +217,7 @@ header nav ul li a {
   align-items: center;
   flex-flow: row wrap;
   background-color: var(--pink);
+  padding-top: 50px;
 }
 
 #about .content-wrapper {
@@ -229,7 +230,16 @@ header nav ul li a {
 #about figure {
   border: 1em solid;
   padding: 10px;
+  max-width: 500px;
 }
+
+#about p {
+  background-color: var(--ltBlue);
+  padding: 10px;
+  border: dashed 5px var(--yellow);
+  max-width: 800px;
+}
+
 
 #about img {
   width: 100%;
@@ -240,7 +250,9 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-flow: row wrap;
+  padding-top: 50px;
 }
 
 #skills .content-wrapper {
@@ -290,18 +302,27 @@ aside .content-wrapper {
   width: 84%;
 }
 
+aside .form-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 aside h2 {
   background-color: var(--pink);
   border: 10px solid var(--orange);
   text-align: center;
   letter-spacing: 5px;
+  padding: 15px;
 }
 
 aside p {
   text-align: center;
+  font-size: 1.5em;
 }
 
-aside input {
+aside input[type=button] {
   width: 100%;
   background-color: var(--yellow);
   color: var(--orange);
@@ -311,6 +332,14 @@ aside input {
   letter-spacing: .2rem;
   text-align: center;
   border: 7px dashed var(--pink);
+  max-width: 400px;
+}
+
+aside input[type=button]:hover {
+  transition: all 0.7s ease 0s;
+  background-color: var(--pink);
+  border: 7px dashed var(--yellow);
+  color: var(--dkBlue);
 }
 
 /* Portfolio */
@@ -319,6 +348,7 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 50px;
 }
 
 #portfolio .content-wrapper {
@@ -330,11 +360,14 @@ aside input {
 }
 
 #portfolio #portfolio-wrapper {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 40px 0;
+  margin: 40px 0; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
 }
 
 #portfolio .card {
@@ -504,10 +537,15 @@ footer .social-icons p i {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   /* Tablet Styles here */
   header nav ul li {
     font-size: 2em;
+  }
+
+  .title {
+    font-size: 5em;
+    margin: 10px 0;
   }
 
   #about figure {
@@ -516,14 +554,12 @@ footer .social-icons p i {
     width: 60%;
   }
 
-  #portfolio .card {
-    background-color: var(--pink);
-    padding: 10px;
-    margin: 10px;
-    border: 5px solid var(--ltBlue);
-    width: 41%;
+  #skills article {
+    width: 30%;
   }
 }
+
+
 
 @media only screen and (min-width: 1000px) {
   
@@ -532,27 +568,31 @@ footer .social-icons p i {
     font-size: 4em;
   }
 
-  /* #about .content-wrapper {
-    width: 70%;
-  } */
-
   #about h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  #about .content-wrapper {
+    min-width: 100%;
+  }
+
+  #about p {
+    font-size: 1.2em;
+  }
+
+  #skills {
+    text-align: center;
+  }
+
+  #skills h1 {
     width: 100%;
   }
 
-  #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-  
-  #about .content-wrapper {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  #portfolio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
