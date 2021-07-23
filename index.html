@@ -10,7 +10,7 @@
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:image" content="img/headshot.jpg">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -63,11 +63,11 @@
         <figure id="headshot">
           <img src="img/headshot.jpg" alt="headshot">
         </figure>
-        <div>
-          <p>I began my venture into tech in the midst of the pandemic, realizing that the more skills I had that could be applied remotely, the better. At first, I approached it with a sense of practicality, knowing coding skills were in high demand — but that mindset changed quickly as I began to realize I had found something that I really loved to do. After many coding courses and hundreds of hours of YouTube tutorials, I decided to pursue web development full-time.</p>
-          <p>I use my love for design and eye for detail to write clean, organized code and create beautiful, functional developments — always with effective communication in mind. </p>
+        <div class = "about-content">
+          <p>I am a New Orleans girl, born and raised, but am trying out life in the Pacific North West for the moment. In my free time, I love to read, paint, journal, cook, or call my mom. You can find me on Sundays at the Ballard Farmer's Market shopping for local, fresh goodies.</p>
+          <p>I broke into tech in the midst of the pandemic, realizing that the more skills I had, the better. At first, I approached learning to code with a sense of practicality but that mindset changed quickly as I began to realize I had found something that I really loved to do. After many coding courses and hundreds of hours of YouTube tutorials, I decided to pursue web development full-time.</p>
+          <p>I use my love for design and eye for detail to write clean, organized code and create beautiful, functional websites — always with the users experience in mind. </p>
           <p><strong>I am passionate about making the world a more beautiful place.</strong></p>
-          <p>I am a New Orleans girl, born and raised, but am trying out life in the Pacific North West for the moment. In my free time, I love to paint, journal, cook, or call my mom. You can find me on Sundays at the Ballard Farmer's Market shopping for local, fresh goodies.</p>
         </div>
       </div>
     </section>
@@ -92,6 +92,18 @@
             <i class="fab fa-js-square"></i>
             </p>
             <p class="skills-item-description">JavaScript</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fab fa-php"></i>
+            </p>
+            <p class="skills-item-description">PHP</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fab fa-wordpress"></i>
+            </p>
+            <p class="skills-item-description">WordPress</p>
           </article>
           <article>
             <p class="fontawesome-icon">
@@ -140,6 +152,51 @@
       <div class="content-wrapper">
         <div id="portfolio-wrapper">
           <div class="card">
+            <a href="https://morganheuer.github.io/guess-the-word/" target="_blank">
+              <img src="img/wordgame.png" alt="wordgame">
+            </a>
+            <h4>Guess the Word</h4>
+            <p>The game starts with a word on the screen. Circle symbols act as placeholders for each letter. Players start by entering a letter. If they guess correctly, the letter appears in the word. If they guess incorrectly, they learn how many guesses they have remaining. The player can also see which letters they've already guessed. The game lets the player know if they've already guessed a letter or entered a non-alphabetic character!</p>
+            <br>
+            <p><strong>Built with: </strong>HTML, CSS, JavaScript</p>
+            <br>
+            <a href="https://github.com/morganheuer/guess-the-word" target="_blank"><p>Check out the code files here!</p></a>
+          </div>
+          <div class="card">
+            <a href="https://morganheuer.github.io/movie-search/" target="_blank">
+              <img src="img/movie-search.png" alt="movie-search">
+            </a>
+            <h4>Movie Search</h4>
+            <p>Using concepts like functional components and hooks, I built this movie search that allows the user to type in a query, which initiates a call to an API (The Movie Database API) to retrieve information about a list of movies that are relevant to that search.
+            </p>
+            <br>
+            <p><strong>Built with: </strong>ReactJS, CSS Grid, API, Create React App</p>
+            <br>
+            <a href="https://github.com/morganheuer/movie-search/" target="_blank"><p>Check out the code files here!</p></a>
+          </div>
+          <div class="card">
+            <a href="" target="_blank">
+              <img src="img/ecsc.png" alt="books">
+            </a>
+            <h4>Emerald City Supper Club</h4>
+            <p>A group of friends and I came together to form the Emerald City Supper Club, a member-supported nonprofit with the mission of bringing friends and family together to raise awareness of, funds for, and a glass to organizations in our community that we’d like to support.</p>
+            <br>
+            <p>Eager to use my new WordPress custom theme building skills, I was able to reimagine and redesign our organization's website into something beautiful.</p>
+            <br>
+            <p><strong>Built with: </strong>HTML, CSS, PHP, WordPress Admin, WordPress Plugins, WordPress Themes, Figma</p>
+            <br>
+            <a href="https://github.com/morganheuer/EmeraldCitySupperClub/tree/main/wp-content/themes/ecsc21" target="_blank"><p>Check out the code files here!</p></a>
+          </div>
+          <div class="card">
+            <a href="http://morgandella.wpengine.com/" target="_blank">
+              <img src="img/book-nook.png" alt="books">
+            </a>
+            <h4>WP Book Nook</h4>
+            <p>Developed a custom WordPress theme to create a site to showcase all of the books I have been reading. By using the WordPress admin I am able to easily update my content when I finish a book.</p>
+            <br>
+            <p><strong>Built with: </strong>HTML, CSS, PHP, WordPress Admin, WordPress Plugins, WordPress Themes</p>
+          </div>
+          <div class="card">
             <a href="https://morganheuer.github.io/beer-app/" target="_blank">
               <img src="img/beer-app.png" alt="beer">
             </a>
@@ -147,42 +204,52 @@
             <p>Using the Punk API, which is a database of beers, I was about to pull in that database, filter the beers by alc volume, by hoppyness, and added pagination to display the results. For each beer displayed in the results the image, name, abv, and ibu are shown. If you hover over the image the card provides more information about the beer.</p>
             <br>
             <p><strong>Built with: </strong>HTML, CSS, JavaScript, fetch, API, data filtering</p>
+            <br>
+            <a href="https://github.com/morganheuer/beer-app" target="_blank"><p>Check out the code files here!</p></a>
           </div>
           <div class="card">
             <a href="https://morganheuer.github.io/journal-app/" target="_blank">
-              <img src="img/journal.png" alt="journal">
+              <img src="img/journal-1.png" alt="journal">
             </a>
             <h4>React Journal</h4>
             <p>As an avid journal keeper, I thought it would be fun to use React to build an online journal. This app fetches a random writing prompt from a php file to display when you refresh the page. I spiffed it up with some CSS to make it appear like a real journal page.</p>
             <br>
             <p><strong>Built with: </strong>HTML, CSS, JavaScript, ReactJS, PHP</p>
+            <br>
+            <a href="https://github.com/morganheuer/journal-app" target="_blank"><p>Check out the code files here!</p></a>
           </div>
           <div class="card">
             <a href="https://morganheuer.github.io/206-retreat/" target="_blank">
-              <img src="img/unplugged-retreat.jpg" alt="retreat">
+              <img src="img/unplugged-retreat-1.png" alt="retreat">
             </a>
             <h4>Unplugged Retreat</h4>
             <p>I took a Photoshop Design Comp for a fictitious corporate retreat center with the challenge to bring it to life, as featured in Skillcrush's Coding Responsive Websites course. From there, I developed a website with mobile-first and responsive web design principles in mind, allowing it to shift from mobile, tablet, and desktop layouts with ease!</p>
             <br>
             <p><strong>Built with: </strong>HTML, CSS, Adobe Photoshop, Responsive Web Design & Mobile-First Principles, Media Queries, Flexbox, Responsive Typography, and Standard Breakpoints</p>
+            <br>
+            <a href="https://github.com/morganheuer/206-retreat" target="_blank"><p>Check out the code files here!</p></a>
           </div>
           <div class="card">
             <a href="https://morganheuer.github.io/west-wing-2002-election-map/" target="_blank">
-              <img src="img/election-map-thumbnail.png" alt="election-map">
+              <img src="img/election-map-thumbnail-1.png" alt="election-map">
             </a>
             <h4>Election Results Map</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eius quos laborum, nemo molestiae mollitia maiores architecto quis maxime non eligendi aut quasi rem temporibus quia cum! Quasi, laborum velit!</p>
+            <p>Created a fictional Election Map for that mimics the results of the 2002 West Wing Election. When you hover over each state, the state changes color to the correlating candidate and the results are also shown in the table.</p>
             <br>
             <p><strong>Built with: </strong>HTML, CSS, JavaScript, JQuery, map.js</p>
+            <br>
+            <a href="https://github.com/morganheuer/west-wing-2002-election-map" target="_blank"><p>Check out the code files here!</p></a>
           </div>
           <div class="card">
             <a href="https://morganheuer.github.io/magic8ball/" target="_blank">
-              <img src="img/magic8ball.jpg" alt="8ball">
+              <img src="img/magic8ball-1.png" alt="8ball">
             </a>
             <h4>Magic 8-Ball</h4>
             <p>I brought this retro toy to the web, as featured in Skillcrush's JavaScript course. With the click of a button, users can seek advice from the Magic 8-Ball, and receive a prediction from the mysterious oracle inside!</p>
             <br>
             <p><strong>Built with: </strong>HTML, CSS, JavaScript, JQuery</p>
+            <br>
+            <a href="https://github.com/morganheuer/magic8ball" target="_blank"><p>Check out the code files here!</p></a>
           </div>
         </div>
       </div>
@@ -191,7 +258,7 @@
   <footer>
     <div class="content-wrapper">
       <h1 class="title">Let's Connect</h1>
-      <div class="contact">
+      <div id="contact">
         <div class="connect">
           <p>
             <strong>email me</strong>
@@ -233,7 +300,7 @@
           <br>
           <div class="social-icons">
             <p>
-              <a href="" target="_blank">
+              <a href="https://drive.google.com/file/d/1xvGalW_OBg34UCv0nRsXuTpWbBqJQjQJ/view?usp=sharing" target="_blank">
                 <i class="fas fa-briefcase">
                 </i>
               </a>

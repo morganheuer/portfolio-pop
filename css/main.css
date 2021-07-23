@@ -233,11 +233,15 @@ header nav ul li a {
   max-width: 500px;
 }
 
-#about p {
+#about .about-content {
   background-color: var(--ltBlue);
+}
+
+#about p {
   padding: 10px;
-  border: dashed 5px var(--yellow);
   max-width: 800px;
+  color: var(--dkBlue);
+  margin: 0;
 }
 
 
@@ -307,6 +311,7 @@ aside .form-description {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 aside h2 {
@@ -379,6 +384,7 @@ aside input[type=button]:hover {
 
 #portfolio h4 {
   margin: 10px 0;
+  color: var(--dkBlue);
 }
 
 #portfolio .card p {
@@ -408,7 +414,7 @@ footer .content-wrapper {
   width: 85%;
 }
 
-.contact {
+#contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -582,6 +588,13 @@ footer .social-icons p i {
     font-size: 1.2em;
   }
 
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
   #skills {
     text-align: center;
   }
@@ -678,3 +691,4 @@ footer .social-icons p i {
   }
 }
 
+}
